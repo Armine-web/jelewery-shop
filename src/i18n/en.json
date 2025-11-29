@@ -1,0 +1,57 @@
+{
+  "home": {
+    "welcome": "Welcome to our website!"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "description": "Browse all our products here."
+  },
+  "product": {
+    "title": "Product Details",
+    "description": "Information about the selected product."
+  },
+  "collections": {
+    "title": "Collections",
+    "description": "Explore our collections."
+  },
+  "category": {
+    "title": "Category",
+    "description": "View different categories here."
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We provide the following services."
+  },
+  "booking": {
+    "title": "Booking",
+    "description": "Book your service or product here."
+  },
+  "checkout": {
+    "title": "Checkout",
+    "description": "Review your order and make payment."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "This is the About page. You can add information about your company here."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us through this page."
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Frequently Asked Questions."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Read our latest news and articles."
+  },
+  "account": {
+    "title": "My Account",
+    "description": "Manage your account details."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist."
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  --white-100: #ffffff;
+  --dark-primary: #100e19;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white-100);
+  font-size: 15px;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: var(--dark-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
