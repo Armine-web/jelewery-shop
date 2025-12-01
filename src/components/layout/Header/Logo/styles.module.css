@@ -1,0 +1,13 @@
+.logo {
+  height: 70px; 
+  width: auto; 
+  cursor: pointer;
+  display: block;
+  border-radius: 50%;
+}
+
+@media (max-width: 1023px) {
+  .logo {
+    height: 50px; 
+  }
+}

@@ -1,0 +1,36 @@
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.headerRight {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.navDesktop {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  font-size: 22px;
+}
+
+@media (max-width: 1182px) {
+  .navDesktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-flex;
+  }
+  .hamburger {
+  display: block;
+  }
+}
+
+
