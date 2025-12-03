@@ -1,12 +1,12 @@
-import { Dropdown, Avatar, Space} from "antd";
-import type { MenuProps } from "antd";
-import { LANGUAGES } from "./const";
-import type { LanguageSwitcherProps } from "./types";
+import { Dropdown, Avatar, Space } from 'antd';
+import type { MenuProps } from 'antd';
+import { LANGUAGES } from './const';
+import type { LanguageSwitcherProps } from './types';
 
 const LanguageSwitcher = ({ currentLang, onChange }: LanguageSwitcherProps) => {
-  const currentItem = LANGUAGES.find((l) => l.key === currentLang) || LANGUAGES[0];
+  const currentItem = LANGUAGES.find(l => l.key === currentLang) || LANGUAGES[0];
 
-  const items: MenuProps['items'] = LANGUAGES.map((item) => ({
+  const items: MenuProps['items'] = LANGUAGES.map(item => ({
     key: item.key,
     label: (
       <Space>
@@ -18,9 +18,9 @@ const LanguageSwitcher = ({ currentLang, onChange }: LanguageSwitcherProps) => {
   }));
 
   return (
-    <Dropdown menu={{ items }} trigger={["click"]} placement="bottomRight">
-      <Space style={{ cursor: "pointer" }}>
-        <Avatar size={22} src={currentItem.icon}  />
+    <Dropdown menu={{ items }} trigger={['click']} placement="bottomRight">
+      <Space style={{ cursor: 'pointer' }}>
+        <Avatar size={22} src={currentItem.icon} />
       </Space>
     </Dropdown>
   );

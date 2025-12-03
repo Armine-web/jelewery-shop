@@ -1,0 +1,11 @@
+.user {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userIcon {
+  font-size: 22px;
+}
+

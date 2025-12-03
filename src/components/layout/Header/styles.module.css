@@ -1,4 +1,4 @@
-.headerTop {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +7,7 @@
 
 .headerRight {
   display: flex;
-  gap: 18px;
+  gap: 12px;
   align-items: center;
 }
 
@@ -20,7 +20,7 @@
   font-size: 22px;
 }
 
-@media (max-width: 1182px) {
+@media (max-width: 1023px) {
   .navDesktop {
     display: none;
   }
@@ -29,8 +29,6 @@
     display: inline-flex;
   }
   .hamburger {
-  display: block;
+    display: block;
   }
 }
-
-

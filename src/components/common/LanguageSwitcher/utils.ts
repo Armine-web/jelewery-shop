@@ -1,4 +1,4 @@
-import type { LanguageItem } from "./types";
+import type { LanguageItem } from './types';
 
 export const getLanguageLabel = (item: LanguageItem) => {
   return item.label;

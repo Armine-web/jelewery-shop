@@ -4,7 +4,7 @@ export type LanguageSwitcherProps = {
 };
 
 export type LanguageItem = {
-  key: string;   
-  label: string; 
-  icon: string; 
+  key: string;
+  label: string;
+  icon: string;
 };

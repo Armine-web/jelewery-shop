@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #100e19;
+  font-family: 'Playwrite CU', cursive;
+  letter-spacing: 0.5px;
+}
 .logo {
-  height: 70px; 
-  width: auto; 
+  height: 30px;
+  width: auto;
   cursor: pointer;
   display: block;
   border-radius: 50%;
-}
-
-@media (max-width: 1023px) {
-  .logo {
-    height: 50px; 
-  }
 }

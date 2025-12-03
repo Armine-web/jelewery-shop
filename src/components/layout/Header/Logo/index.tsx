@@ -1,13 +1,15 @@
 import styles from './styles.module.css';
-import logo from "../../../../assets/images/logo/logo.jpg";
+import logo from '../../../../assets/images/logo/logo.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function Logo() {
   const navigate = useNavigate();
   return (
-    <img src={logo} alt="Kassaman Logo" className={styles.logo} onClick={() => navigate('/')} />
-  )
+    <div className={styles.logoContainer} onClick={() => navigate('/')}>
+      <img src={logo} alt="Kassaman Logo" className={styles.logo} />
+      <span className={styles.logoText}>Kassaman</span>
+    </div>
+  );
 }
 
-export default Logo
-
+export default Logo;
