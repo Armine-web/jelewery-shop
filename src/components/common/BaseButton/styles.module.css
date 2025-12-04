@@ -1,0 +1,18 @@
+.baseButton {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+:global(.ant-btn-link) {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  text-transform: normal;
+  letter-spacing: var(--letter-spacing-small);
+  color: var(--color-secondary);
+  padding: 0;
+}
+
+:global(.ant-btn-link):hover {
+  color: var(--color-hover-link) !important;
+}

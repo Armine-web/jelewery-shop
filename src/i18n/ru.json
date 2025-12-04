@@ -53,5 +53,12 @@
   "notFound": {
     "title": "Страница не найдена",
     "description": "Страница, которую вы ищете, не существует."
+  },
+  "productCard": {
+    "name": "{{value}}",
+    "description": "{{value}}",
+    "price": "{{value}} ₽",
+    "book": "Забронировать",
+    "category": "{{value}}"
   }
 }

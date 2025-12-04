@@ -53,5 +53,12 @@
   "notFound": {
     "title": "Էջը չի գտնվել",
     "description": "Էջը, որը դուք փնտրում եք, գոյություն չունի։"
+  },
+  "productCard": {
+    "name": "{{value}}",
+    "description": "{{value}}",
+    "price": "{{value}} ֏Ր",
+    "book": "Ամրագրել",
+    "category": "{{value}}"
   }
 }
