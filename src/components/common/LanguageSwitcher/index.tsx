@@ -20,7 +20,7 @@ const LanguageSwitcher = ({ currentLang, onChange }: LanguageSwitcherProps) => {
   return (
     <Dropdown menu={{ items }} trigger={['click']} placement="bottomRight">
       <Space style={{ cursor: 'pointer' }}>
-        <Avatar size={22} src={currentItem.icon} />
+        <Avatar size={20} src={currentItem.icon} />
       </Space>
     </Dropdown>
   );

@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import logo from '../../../../assets/images/logo/logo.jpg';
+import logo from '../../../../assets/img/logo/logo.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function Logo() {

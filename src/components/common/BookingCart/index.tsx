@@ -1,13 +1,18 @@
 import { Badge } from 'antd';
-import { ShoppingOutlined } from '@ant-design/icons';
+import { ScheduleOutlined } from '@ant-design/icons';
 
 import type { BookingCartIconProps } from './types';
-import { CART_OVERFLOW_COUNT, CART_ICON_STYLE, CART_BADGE_STYLE } from './const';
+import styles from './styles.module.css';
 
 export const BookingCart = ({ count, onClick }: BookingCartIconProps) => {
   return (
-    <Badge count={count} overflowCount={CART_OVERFLOW_COUNT} style={CART_BADGE_STYLE}>
-      <ShoppingOutlined style={CART_ICON_STYLE} onClick={onClick} />
+    <Badge
+      count={count}
+      overflowCount={99}
+      style={{ backgroundColor: '#631c1a' }}
+      className={styles.bookingcartBadge}
+    >
+      <ScheduleOutlined className={styles.bookingcarticon} onClick={onClick} />
     </Badge>
   );
 };

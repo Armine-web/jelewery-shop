@@ -10,11 +10,9 @@ const Navigation = ({ onLinkClick }: NavigationProps) => {
     { path: '/catalog', key: 'catalog' },
     { path: '/collections', key: 'collections' },
     { path: '/services', key: 'services' },
-    { path: '/booking', key: 'booking' },
-    { path: '/blog', key: 'blog' },
-    { path: '/faq', key: 'faq' },
+    { path: '/about', key: 'about' },
     { path: '/contact', key: 'contact' },
-    { path: '/account', key: 'account' },
+
   ];
 
   return (

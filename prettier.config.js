@@ -1,8 +1,8 @@
 export default {
   singleQuote: true,
   semi: true,
-  trailingComma: "all",
+  trailingComma: 'all',
   printWidth: 100,
   tabWidth: 2,
-  arrowParens: "avoid",
+  arrowParens: 'avoid',
 };

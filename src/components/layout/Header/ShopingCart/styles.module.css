@@ -1,0 +1,20 @@
+.cartIcon {
+  font-size: 22px;
+  cursor: pointer;
+  transition:
+    font-size 0.3s ease,
+    color 0.3s ease;
+}
+
+.cartIcon {
+  color: var(--dark-primary);
+  background-color: none;
+}
+
+.cartIcon:hover {
+  color: #631c1a;
+}
+
+.cartBadge {
+  color: var(--color-white);
+}

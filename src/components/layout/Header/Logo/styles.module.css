@@ -9,9 +9,9 @@
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  color: #100e19;
+  color: var(--dark-primary);
   font-family: 'Playwrite CU', cursive;
-  letter-spacing: 0.5px;
+  letter-spacing: var(--letter-spacing-small);
 }
 .logo {
   height: 30px;
@@ -19,4 +19,18 @@
   cursor: pointer;
   display: block;
   border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .logoContainer {
+    gap: 2px;
+  }
+  .logoText {
+    font-size: var(--text-regular);
+    letter-spacing: 0.1px;
+  }
+
+  .logo {
+    height: 20px;
+  }
 }
