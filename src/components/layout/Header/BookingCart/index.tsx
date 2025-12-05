@@ -1,6 +1,5 @@
 import { Badge } from 'antd';
 import { ScheduleOutlined } from '@ant-design/icons';
-
 import type { BookingCartIconProps } from './types';
 import styles from './styles.module.css';
 
@@ -9,7 +8,7 @@ export const BookingCart = ({ count, onClick }: BookingCartIconProps) => {
     <Badge
       count={count}
       overflowCount={99}
-      style={{ backgroundColor: '#631c1a' }}
+      style={{ backgroundColor: '#850710' }}
       className={styles.bookingcartBadge}
     >
       <ScheduleOutlined className={styles.bookingcarticon} onClick={onClick} />

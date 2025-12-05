@@ -1,5 +1,5 @@
 .cartIcon {
-  font-size: 22px;
+  font-size: var(--text-large);
   cursor: pointer;
   transition:
     font-size 0.3s ease,
@@ -12,7 +12,7 @@
 }
 
 .cartIcon:hover {
-  color: #631c1a;
+  color: var(--color-hover-link);
 }
 
 .cartBadge {

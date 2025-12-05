@@ -1,4 +1,4 @@
-export type ShoppingCartIconProps = {
+export type ShopCartIconProps = {
   count: number;
   onClick?: () => void;
 };

@@ -1,40 +1,40 @@
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
-import type { NavigationProps } from './types';
+import type { MainMenuProps } from './types';
 
-const Navigation = ({ onLinkClick }: NavigationProps) => {
+const MainMenu = ({ onLinkClick }: MainMenuProps) => {
   const { t } = useTranslation();
 
-  const links = [
-    { path: '/catalog', key: 'catalog' },
-    { path: '/collections', key: 'collections' },
-    { path: '/services', key: 'services' },
-    { path: '/about', key: 'about' },
-    { path: '/contact', key: 'contact' },
-
+  const menuItems = [
+    { label: 'catalog', path: '/catalog' },
+    { label: 'collections', path: '/collections' },
+    { label: 'services', path: '/services' },
+    { label: 'about', path: '/about' },
+    { label: 'contact', path: '/contact' },
   ];
 
   return (
     <div className={styles.navWrapper}>
       <nav className={styles.nav}>
         <ul>
-          {links.map(link => (
-            <li key={link.key} className={styles.navItem}>
+          {menuItems.map(item => (
+            <li key={item.label} className={styles.navItem}>
               <NavLink
-                to={link.path}
+                to={item.path}
                 className={({ isActive }) => (isActive ? styles.active : '')}
                 onClick={onLinkClick}
               >
-                {t(`${link.key}.title`)}
+                {t(`${item.label}.title`)}
                 <span className={styles.underline}></span>
               </NavLink>
             </li>
           ))}
         </ul>
+        <hr />
       </nav>
     </div>
   );
 };
 
-export default Navigation;
+export default MainMenu;

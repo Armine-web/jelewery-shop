@@ -1,17 +1,16 @@
 import { useState } from 'react';
-import BookingCart from '../../common/BookingCart';
-import LanguageSwitcher from '../../common/LanguageSwitcher';
-
-import { useTranslation } from 'react-i18next';
-import Logo from './Logo/index';
-import { useNavigate } from 'react-router-dom';
-import styles from './styles.module.css';
-import Navigation from './MainMenu';
 import { Drawer, Button } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import Logo from './Logo/index';
+import Navigation from './MainMenu';
 import User from './User';
-import ShoppingCart from './ShopingCart';
-import ShoppingCartDrawer from './ShopingCartDrawer';
+import BookingCart from './BookingCart';
+import LanguageSwitcher from '../../common/LanguageSwitcher';
+import ShoppingCart from './ShopCart';
+import ShoppingCartDrawer from './ShopCart/ShopCartDrawer';
+import styles from './styles.module.css';
 
 const Header = () => {
   const { i18n } = useTranslation();
@@ -32,9 +31,9 @@ const Header = () => {
   const closeCart = () => setOpen(false);
 
   return (
-    <header>
+    <header className={styles.header}>
       <div className="container">
-        <div className={styles.header}>
+        <div className={styles.headerContent}>
           <Button
             className={styles.hamburger}
             type="text"

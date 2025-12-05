@@ -6,15 +6,15 @@
 }
 
 .userIcon {
-  font-size: 20px;
+  font-size: var(--text-large);
 }
 
 .userIcon:hover {
-  color: #631c1a;
+  color: var(--color-hover-link);
 }
 
 @media (max-width: 480px) {
   .userIcon {
-    font-size: 18px;
+    font-size: var(--text-regular);
   }
 }

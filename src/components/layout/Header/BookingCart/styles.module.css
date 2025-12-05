@@ -1,14 +1,14 @@
 .bookingcarticon {
-  font-size: 20px;
+  font-size: var(--text-large);
   cursor: pointer;
   color: var(--dark-primary);
   transition: color 0.3s ease;
-};
+}
 
 .bookingcartBadge {
   color: var(--color-primary);
-};
+}
 
 .bookingcarticon:hover {
-  color: #631c1a;
+  color: var(--color-hover-link);
 }

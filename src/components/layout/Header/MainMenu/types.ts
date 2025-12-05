@@ -1,3 +1,3 @@
-export type NavigationProps = {
+export type MainMenuProps = {
   onLinkClick?: () => void;
 };

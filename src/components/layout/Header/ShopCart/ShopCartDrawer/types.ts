@@ -1,4 +1,4 @@
-export type ShoppingCartDrawerProps = {
+export type ShopCartDrawerProps = {
   open: boolean;
   onClose: () => void;
 }
