@@ -54,6 +54,7 @@ hr {
       align-items: flex-start;
       gap: 0;
     }
+
     .navItem {
       width: 100%;
       border-bottom: 1px solid #f2f2f2;
@@ -72,6 +73,7 @@ hr {
     .navItem > a:hover {
       color: var(--color-hover-link);
     }
+
     .navItem > a:hover::after {
       width: 0;
     }

@@ -1,14 +1,13 @@
-import type { FC } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import styles from './styles.module.css';
 import { Outlet } from 'react-router-dom';
 
-const MainLayout: FC = () => {
+const MainLayout = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <main className="container">
+      <main>
         <Outlet />
       </main>
       <Footer />

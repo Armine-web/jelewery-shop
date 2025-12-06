@@ -1,24 +1,17 @@
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import styles from './styles.module.css';
+import { MENU_ITEMS } from './const';
 import type { MainMenuProps } from './types';
+import styles from './styles.module.css';
 
 const MainMenu = ({ onLinkClick }: MainMenuProps) => {
   const { t } = useTranslation();
-
-  const menuItems = [
-    { label: 'catalog', path: '/catalog' },
-    { label: 'collections', path: '/collections' },
-    { label: 'services', path: '/services' },
-    { label: 'about', path: '/about' },
-    { label: 'contact', path: '/contact' },
-  ];
 
   return (
     <div className={styles.navWrapper}>
       <nav className={styles.nav}>
         <ul>
-          {menuItems.map(item => (
+          {MENU_ITEMS.map(item => (
             <li key={item.label} className={styles.navItem}>
               <NavLink
                 to={item.path}

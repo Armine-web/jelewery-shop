@@ -12,6 +12,7 @@
   font-family: var(--font-accent);
   letter-spacing: var(--letter-spacing-small);
 }
+
 .logo {
   height: 30px;
   width: auto;
@@ -24,6 +25,7 @@
   .logoContainer {
     gap: 2px;
   }
+  
   .logoText {
     font-size: var(--text-regular);
     letter-spacing: 0.1px;

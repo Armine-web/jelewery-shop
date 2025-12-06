@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Drawer, Button } from 'antd';
+import { Button } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -10,6 +10,7 @@ import BookingCart from './BookingCart';
 import LanguageSwitcher from '../../common/LanguageSwitcher';
 import ShoppingCart from './ShopCart';
 import ShoppingCartDrawer from './ShopCart/ShopCartDrawer';
+import MenuDrawer from './MenuDrawer';
 import styles from './styles.module.css';
 
 const Header = () => {
@@ -41,20 +42,7 @@ const Header = () => {
             onClick={toggleDrawer}
           />
 
-          <Drawer
-            placement="left"
-            onClose={closeDrawer}
-            open={drawerVisible}
-            className={styles.drawer}
-          >
-            <Navigation onLinkClick={closeDrawer} />
-
-            <div className={styles.showOnMobile} onClick={closeDrawer}>
-              <User />
-              <span className={styles.mobileUserText}>Sign In</span>
-            </div>
-          </Drawer>
-
+          <MenuDrawer open={drawerVisible} onClose={closeDrawer} />
           <Logo />
 
           <div className={styles.navDesktop}>
