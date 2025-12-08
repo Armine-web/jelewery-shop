@@ -1,0 +1,110 @@
+.stayConnected {
+  min-width: 250px;
+  margin-left: 80px;
+}
+
+.stayConnectedTitle {
+  font-size: var(--text-small);
+  margin-bottom: 20px;
+  color: var(--dark-primary);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.description {
+  color: #666;
+  font-size: var(--text-small);
+  margin-bottom: 2px;
+  line-height: 1.5;
+  display: block;
+}
+
+.contactText {
+  font-size: var(--text-regular);
+  font-family: var(--font-body);
+  color: var(--dark-primary);
+  letter-spacing: var(--letter-spacing-medium);
+  margin: 0;
+}
+
+.contactInfo {
+  margin-bottom: 16px;
+}
+
+.phone {
+  font-size: var(--text-regular);
+  color: var(--dark-primary);
+  margin-bottom: 8px;
+  font-weight: 500;
+  display: block;
+}
+
+.email {
+  color: #666;
+  text-decoration: underline;
+  font-size: var(--text-regular);
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.email:hover {
+  color: var(--color-hover-link);
+}
+
+.signUpButton {
+  width: 65%;
+  height: auto;
+  padding: 8px 24px;
+  margin: 12px 0;
+  font-size: var(--text-regular);
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--dark-primary);
+  border: 1px solid var(--dark-primary);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signUpButton:hover {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-white) !important;
+  transform: translateY(-1px);
+  border: none !important;
+}
+
+.signUpButton:active {
+  transform: translateY(0);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.socialLink {
+  color: #2c2c2c;
+  font-size: var(--text-large);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLink:hover {
+  color: var(--color-hover-link);
+}
+
+@media (max-width: 958px) {
+  .stayConnected {
+    margin-top: 32px;
+    margin-left: 0;
+  }
+
+  .signUpButton {
+    width: 32%;
+  }
+}

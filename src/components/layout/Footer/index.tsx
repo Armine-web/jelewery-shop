@@ -1,11 +1,60 @@
+import { useState, useEffect } from 'react';
+import { Typography } from 'antd';
+import { useTranslation } from 'react-i18next';
+import DesktopFooter from './DesktopFooter';
+import MobileFooter from './MobileFooter';
+import EmailSignupModal from './EmailSignupModal';
+import { FOOTER_COLUMNS, SOCIAL_LINKS, CONTACT_INFO, BREAKPOINT_MOBILE } from './const';
 import styles from './styles.module.css';
 
+const { Text } = Typography;
+
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < BREAKPOINT_MOBILE);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className={styles.footer}>
-      <div className="container">
-        <div>Footer</div>
+      <div className={styles.container}>
+        {isMobile ? (
+          <MobileFooter
+            columns={FOOTER_COLUMNS}
+            socialLinks={SOCIAL_LINKS}
+            contactInfo={CONTACT_INFO}
+            onOpenModal={() => setIsModalVisible(true)}
+          />
+        ) : (
+          <DesktopFooter
+            columns={FOOTER_COLUMNS}
+            socialLinks={SOCIAL_LINKS}
+            contactInfo={CONTACT_INFO}
+            onOpenModal={() => setIsModalVisible(true)}
+          />
+        )}
       </div>
+
+      <div className={styles.bottomBar}>
+        <div className={styles.container}>
+          <div className={styles.bottomContent}>
+            <Text className={styles.copyright}>{t('footer.copyright', { year: currentYear })}</Text>
+          </div>
+        </div>
+      </div>
+
+      <EmailSignupModal visible={isModalVisible} onClose={() => setIsModalVisible(false)} />
     </footer>
   );
 };

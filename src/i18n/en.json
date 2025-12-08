@@ -60,5 +60,52 @@
     "price": "${{value}}",
     "book": "Book an item",
     "category": "{{value}}"
+  },
+  "footer": {
+    "stayConnected": "Stay Connected",
+    "getInsiderInfo": "Get insider information about exclusive",
+    "offersEvents": "offers, events and more",
+    "signUpForEmail": "Sign Up For Email",
+    "contactUs": "Contact Us",
+    "copyright": "© {{year}} Kassaman. All rights reserved",
+    "columns": {
+      "help": "Help",
+      "faq": "FAQ",
+      "contactUs": "Contact Us",
+      "ourServices": "Our Services",
+      "booking": "Booking",
+      "checkout": "Checkout",
+      "workingHours": "Working Hours",
+      "resources": "Resources",
+      "catalog": "Catalog",
+      "collections": "Collections",
+      "product": "Product",
+      "payment": "Payment",
+      "followUs": "Follow Us",
+      "address": "Address",
+      "about": "About",
+      "blog": "Blog",
+      "aboutUs": "About Us",
+      "rings": "Rings",
+      "bracelets": "Bracelets",
+      "cufflinks": "Cufflinks",
+      "necklaces": "Necklaces"
+    },
+    "social": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "emailSignup": {
+    "title": "Stay Connected",
+    "firstTimeText": "First-time customer? Sign up for free shipping on your first order.",
+    "alreadyShopText": "Already shop with us? Sign up to get early access to new drops, styling inspiration, and exclusive offers.",
+    "placeholder": "Enter your email address",
+    "buttonText": "Subscribe",
+    "successMessage": "Thanks for subscribing!",
+    "errorMessage": "Invalid email address",
+    "emptyEmailMessage": "Please enter your email address"
   }
 }
