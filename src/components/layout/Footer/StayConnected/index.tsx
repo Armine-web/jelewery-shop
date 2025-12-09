@@ -1,4 +1,4 @@
-import { Typography, Button } from 'antd';
+import { Button } from 'antd';
 import {
   TwitterOutlined,
   FacebookOutlined,
@@ -9,8 +9,6 @@ import { useTranslation } from 'react-i18next';
 import type { StayConnectedProps } from './types';
 import { formatPhone } from './utils';
 import styles from './styles.module.css';
-
-const { Title, Text } = Typography;
 
 const StayConnected = ({ socialLinks, contactInfo, onOpenModal }: StayConnectedProps) => {
   const { t } = useTranslation();
@@ -25,22 +23,22 @@ const StayConnected = ({ socialLinks, contactInfo, onOpenModal }: StayConnectedP
 
   return (
     <div className={styles.stayConnected}>
-      <Title level={4} className={styles.stayConnectedTitle}>
+      <h1  className={styles.stayConnectedTitle}>
         {t('footer.stayConnected')}
-      </Title>
-      <Text className={styles.description}>
+      </h1>
+      <p className={styles.description}>
         {t('footer.getInsiderInfo')}
         <br />
         {t('footer.offersEvents')}
-      </Text>
+      </p>
       <Button size="large" className={styles.signUpButton} onClick={onOpenModal}>
         {t('footer.signUpForEmail')}
       </Button>
-      <Title level={3} className={styles.contactText}>
+      <h2 className={styles.contactText}>
         {t('footer.contactUs')}
-      </Title>
+      </h2>
       <div className={styles.contactInfo}>
-        <Text className={styles.phone}>{formatPhone(contactInfo.phone)}</Text>
+        <p className={styles.phone}>{formatPhone(contactInfo.phone)}</p>
         <a href={`mailto:${contactInfo.email}`} className={styles.email}>
           {contactInfo.email}
         </a>

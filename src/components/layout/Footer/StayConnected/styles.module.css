@@ -1,20 +1,21 @@
 .stayConnected {
   min-width: 250px;
-  margin-left: 80px;
+  margin-left: 170px;
 }
 
 .stayConnectedTitle {
-  font-size: var(--text-small);
+  font-size: var(--text-regular);
   margin-bottom: 20px;
   color: var(--dark-primary);
   font-family: var(--font-heading);
   text-transform: uppercase;
   margin-top: 0;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .description {
-  color: #666;
+  color: var(--dark-primary);
+  font-family: var(--font-heading);
   font-size: var(--text-small);
   margin-bottom: 2px;
   line-height: 1.5;
@@ -23,7 +24,7 @@
 
 .contactText {
   font-size: var(--text-regular);
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   color: var(--dark-primary);
   letter-spacing: var(--letter-spacing-medium);
   margin: 0;
@@ -42,7 +43,8 @@
 }
 
 .email {
-  color: #666;
+  color: var(--dark-primary);
+  font-family: var(--font-heading);
   text-decoration: underline;
   font-size: var(--text-regular);
   display: block;
@@ -54,7 +56,7 @@
 }
 
 .signUpButton {
-  width: 65%;
+  width: 75%;
   height: auto;
   padding: 8px 24px;
   margin: 12px 0;
@@ -82,7 +84,7 @@
 .socialLinks {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 6px;
 }
 
 .socialLink {

@@ -7,15 +7,16 @@
 
 .columnsWrapper {
   display: flex;
-  gap: 80px;
+  gap: 240px;
   flex: 1;
   justify-content: center;
-  margin-left: 70px;
+  margin-left: 30px; 
 }
 
 .stayConnectedWrapper {
   flex-shrink: 0;
   margin-left: auto;
+  
 }
 
 .column {
@@ -24,11 +25,12 @@
 }
 
 .columnTitle {
-  font-size: var(--text-small);
+  font-size: var(--text-regular);
   margin-bottom: 20px;
   color: var(--dark-primary);
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: bold;
+  letter-spacing: var(--letter-spacing-medium);
   text-transform: uppercase;
   margin-top: 0;
 }
@@ -46,7 +48,7 @@
 .link {
   color: var(--dark-primary);
   text-decoration: none;
-  font-size: var(--text-regular);
+  font-size: var(--text-small);
   text-transform: uppercase;
   font-family: var(--font-heading);
   letter-spacing: var(--letter-spacing-medium);

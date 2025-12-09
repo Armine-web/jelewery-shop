@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { Modal, Input, Button, Typography, message } from "antd";
+import { Modal, Input, Button, message } from "antd";
 import { useTranslation } from "react-i18next";
 import type { EmailSignupModalProps } from "./types";
 import { MODAL_WIDTH, MODAL_TEXTS, EMAIL_VALIDATION_REGEX } from "./const";
 import { submitEmail } from "./utils";
 import styles from "./styles.module.css";
-
-const { Title, Text } = Typography;
 
 const EmailSignupModal = ({ visible, onClose }: EmailSignupModalProps) => {
   const [email, setEmail] = useState("");
@@ -57,17 +55,17 @@ const EmailSignupModal = ({ visible, onClose }: EmailSignupModalProps) => {
       className={styles.modal}
     >
       <div className={styles.content}>
-        <Title level={2} className={styles.title}>
+        <h1 className={styles.title}>
           {t(MODAL_TEXTS.title)}
-        </Title>
+        </h1>
 
         <div className={styles.textSection}>
-          <Text className={styles.firstTimeText}>
+          <p className={styles.firstTimeText}>
             {t(MODAL_TEXTS.firstTimeText)}
-          </Text>
-          <Text className={styles.alreadyShopText}>
+          </p>
+          <p className={styles.alreadyShopText}>
             {t(MODAL_TEXTS.alreadyShopText)}
-          </Text>
+          </p>
         </div>
 
         <div className={styles.formSection}>

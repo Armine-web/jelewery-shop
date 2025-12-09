@@ -1,9 +1,6 @@
-import { Typography } from 'antd';
 import { useTranslation } from 'react-i18next';
 import StayConnected from '../StayConnected';
 import styles from './styles.module.css';
-
-const { Title } = Typography;
 
 const DesktopFooter = ({ columns, socialLinks, contactInfo, onOpenModal }) => {
   const { t } = useTranslation();
@@ -13,9 +10,9 @@ const DesktopFooter = ({ columns, socialLinks, contactInfo, onOpenModal }) => {
       <div className={styles.columnsWrapper}>
         {columns.map((column, index) => (
           <div key={index} className={styles.column}>
-            <Title level={4} className={styles.columnTitle}>
+            <h1 className={styles.columnTitle}>
               {t(`footer.columns.${column.title}`)}
-            </Title>
+            </h1>
             <ul className={styles.linkList}>
               {column.links.map((link, linkIndex) => (
                 <li key={linkIndex} className={styles.linkItem}>

@@ -21,11 +21,11 @@
   }
   
   .title {
-    font-size: 40px;
-    font-weight: 400 ;
+    font-weight: bold;
     margin-bottom: 24px;
     color: var(--dark-primary);
     font-family: var(--font-heading);
+    font-size: var(--text-large);
     line-height: 1.2;
   }
   
@@ -38,14 +38,16 @@
   }
   
   .firstTimeText {
-    font-size: var(--text-regular);
+    font-size: var(--text-small);
     color: var(--dark-primary);
+    font-family: var(--font-heading);
     display: block;
   }
   
   .alreadyShopText {
     font-size: var(--text-small);
     color: var(--dark-primary);
+    font-family: var(--font-heading);
     display: block;
     line-height: 24px;
   }

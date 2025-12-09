@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Typography } from 'antd';
 import { useTranslation } from 'react-i18next';
 import DesktopFooter from './DesktopFooter';
 import MobileFooter from './MobileFooter';
 import EmailSignupModal from './EmailSignupModal';
 import { FOOTER_COLUMNS, SOCIAL_LINKS, CONTACT_INFO, BREAKPOINT_MOBILE } from './const';
 import styles from './styles.module.css';
-
-const { Text } = Typography;
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -49,7 +46,7 @@ const Footer = () => {
       <div className={styles.bottomBar}>
         <div className={styles.container}>
           <div className={styles.bottomContent}>
-            <Text className={styles.copyright}>{t('footer.copyright', { year: currentYear })}</Text>
+            <p className={styles.copyright}>{t('footer.copyright', { year: currentYear })}</p>
           </div>
         </div>
       </div>
