@@ -4,7 +4,6 @@ import en from './en.json';
 import ru from './ru.json';
 import am from './am.json';
 
-
 i18n.use(initReactI18next).init({
   resources: {
     en: { translation: en },

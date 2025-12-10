@@ -1,5 +1,5 @@
 import am from './am.png';
 import ru from './ru.png';
-import gb from './gb.png';
+import en from './en.png';
 
-export { am, ru, gb };
+export { am, ru, en };

@@ -1,6 +1,36 @@
 {
   "home": {
-    "welcome": "Добро пожаловать на наш сайт!"
+    "bannerSlider": [
+      {
+        "id": "1",
+        "image": "ring9",
+        "title": "Изящные украшения. Ручная работа.",
+        "buttonBook": "Забронировать",
+        "buttonShop": "Купить"
+      },
+      {
+        "id": "2",
+        "image": "ring10",
+        "title": "Последняя коллекция колец.",
+        "buttonBook": "Забронировать",
+        "buttonShop": "Купить"
+      },
+      {
+        "id": "3",
+        "image": "cufflinks5",
+        "title": "Премиальные запонки.",
+        "buttonBook": "Забронировать",
+        "buttonShop": "Купить"
+      },
+
+      {
+        "id": "4",
+        "image": "necklace3",
+        "title": "Роскошные ожерелья мужчин",
+        "buttonBook": "Забронировать",
+        "buttonShop": "Купить"
+      }
+    ]
   },
   "catalog": {
     "title": "Каталог",
