@@ -1,0 +1,16 @@
+.hamburger {
+  display: none;
+  font-size: var(--text-large);
+}
+
+@media (max-width: 1023px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger {
+    font-size: 18px;
+  }
+}

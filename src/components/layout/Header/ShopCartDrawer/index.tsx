@@ -1,4 +1,4 @@
-import AppDrawer from '../../../../common/Drawer';
+import AppDrawer from '../../../common/Drawer';
 import type { ShopCartDrawerProps } from './types';
 
 const ShopCartDrawer = ({ open, onClose }: ShopCartDrawerProps) => {

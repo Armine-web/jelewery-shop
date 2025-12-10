@@ -1,0 +1,138 @@
+.slide {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.slideContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+  position: absolute;
+  bottom: 14%;
+  right: 5%;
+  text-align: right;
+  z-index: 2;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttonBook,
+.buttonShop {
+  color: #fff;
+  font-size: var(--text-regular);
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.25s ease !important;
+  box-shadow:
+    0 0 6px 0 #e7c8c5 inset,
+    0 0 6px 4px #f7cac6;
+  background-color: transparent;
+}
+
+.buttonBook {
+  padding: 10px 22px;
+}
+
+.buttonShop {
+  padding: 10px 34px;
+}
+
+.buttonBook:hover,
+.buttonShop:hover {
+  border: none !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 8px 0 #e7c8c5 inset,
+    0 0 8px 4px #f7cac6;
+}
+
+@media (max-width: 768px) {
+  .textContainer {
+    bottom: 12%;
+    right: 6%;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .buttons {
+    gap: 15px;
+  }
+
+  .buttonBook,
+  .buttonShop {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .buttonBook {
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .textContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .buttonBook,
+  .buttonShop {
+    font-size: 15px;
+  }
+
+  .buttonBook {
+    padding: 1px 9px !important;
+  }
+
+  .buttonShop {
+    padding: 1px 18px;
+  }
+}

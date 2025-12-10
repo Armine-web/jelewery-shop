@@ -11,6 +11,8 @@
   --text-large: 22px;
   --letter-spacing-small: 0.4px;
   --letter-spacing-medium: 0.8px;
+  --line-height-text: 1.5;
+  --line-height-title: 1.2;
 }
 
 *,
@@ -28,10 +30,16 @@ body {
   font-size: 15px;
   font-family: var(--font-body);
   font-weight: 400;
-  line-height: 1.5;
+  line-height: var(--line-height-text);
   letter-spacing: var(--letter-spacing-small);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+  line-height: var(--line-height-title);
+  font-family: var(--font-heading);
 }
 
 a {
@@ -42,6 +50,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {

@@ -1,18 +1,28 @@
 .nav {
-  position: relative;
+  width: 100%;
 }
 
-.nav ul {
+.drawerNav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.drawerList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+}
+
+.navList {
   display: flex;
   justify-content: center;
-  list-style: none;
   gap: 15px;
-  margin: 0;
-  padding: 0;
-  position: relative;
 }
 
-.navItem > a {
+.navItem a {
   position: relative;
   font-size: var(--text-small);
   letter-spacing: var(--letter-spacing-medium);
@@ -46,45 +56,32 @@ hr {
   border: 0;
 }
 
-@media (max-width: 1023px) {
-  .nav {
-    ul {
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0;
-    }
+@media (max-width: 1020px) {
+  .nav:not(.drawerNav) {
+    display: none;
+  }
 
-    .navItem {
-      width: 100%;
-      border-bottom: 1px solid #f2f2f2;
-      padding: 10px 0;
-    }
+  .navItem {
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 0;
+  }
 
-    .navItem:last-child {
-      border-bottom: none;
-      margin-bottom: 10px;
-    }
+  .navItem:last-child {
+    border-bottom: none;
+    margin-bottom: 10px;
+  }
 
-    .navItem > a {
-      color: var(--dark-primary);
-    }
+  .navItem > a:hover::after {
+    width: 0;
+  }
 
-    .navItem > a:hover {
-      color: var(--color-hover-link);
-    }
-
-    .navItem > a:hover::after {
-      width: 0;
-    }
-
-    hr {
-      position: relative;
-      left: -24px;
-      width: calc(100% + 48px);
-      border: 0;
-      border-top: 1px solid #e0dfdf;
-    }
+  hr {
+    position: relative;
+    left: -24px;
+    width: calc(100% + 48px);
+    border: 0;
+    border-top: 1px solid #e0dfdf;
   }
 }
 

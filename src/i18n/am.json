@@ -1,6 +1,36 @@
 {
   "home": {
-    "welcome": "Բարի գալուստ մեր կայք!"
+    "bannerSlider": [
+      {
+        "id": "1",
+        "image": "ring9",
+        "title": "Նուրբ զարդեր՝ ձեռքի աշխատանք",
+        "buttonBook": "Պատվիրել",
+        "buttonShop": "Գնել հիմա"
+      },
+      {
+        "id": "2",
+        "image": "ring10",
+        "title": "Նորագույն մատանիների հավաքածու",
+        "buttonBook": "Պատվիրել",
+        "buttonShop": "Գնել հիմա"
+      },
+      {
+        "id": "3",
+        "image": "cufflinks5",
+        "title": "Պրեմիում Ճարմանդներ",
+        "buttonBook": "Պատվիրել",
+        "buttonShop": "Գնել հիմա"
+      },
+
+      {
+        "id": "4",
+        "image": "necklace3",
+        "title": "Շքեղ վզնոցներ տղամարդկանց համար",
+        "buttonBook": "Պատվիրել",
+        "buttonShop": "Գնել հիմա"
+      }
+    ]
   },
   "catalog": {
     "title": "Կատալոգ",

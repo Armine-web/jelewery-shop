@@ -5,10 +5,6 @@
   transition: color 0.3s ease;
 }
 
-.bookingcartBadge {
-  color: var(--color-primary);
-}
-
 .bookingcarticon:hover {
   color: var(--color-hover-link);
 }

@@ -1,6 +1,36 @@
 {
   "home": {
-    "welcome": "Welcome to our website!"
+    "bannerSlider": [
+      {
+        "id": " 1",
+        "image": "ring9",
+        "title": "Fine Jewelry. Handmade.",
+        "buttonBook": "Book an item",
+        "buttonShop": "Shop Now"
+      },
+      {
+        "id": "2",
+        "image": "ring10",
+        "title": "Latest Rings Collection.",
+        "buttonBook": "Book an item",
+        "buttonShop": "Shop Now"
+      },
+      {
+        "id": "3",
+        "image": "cufflinks5",
+        "title": "Premium Cufflinks.",
+        "buttonBook": "Book an item",
+        "buttonShop": "Shop Now"
+      },
+
+      {
+        "id": " 4",
+        "image": "necklace3",
+        "title": "Luxury Necklaces for Men.",
+        "buttonBook": "Book an item",
+        "buttonShop": "Shop Now"
+      }
+    ]
   },
   "catalog": {
     "title": "Catalog",
@@ -19,7 +49,7 @@
     "description": "View different categories here."
   },
   "services": {
-    "title": "Our Services",
+    "title": "Services",
     "description": "We provide the following services."
   },
   "booking": {

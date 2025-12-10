@@ -6,10 +6,11 @@ const AppDrawer = ({
   title = '',
   open,
   onClose,
+  className,
   children,
 }: AppDrawerProps) => {
   return (
-    <Drawer placement={side} title={title} onClose={onClose} open={open}>
+    <Drawer placement={side} title={title} onClose={onClose} open={open} className={className}>
       {children}
     </Drawer>
   );
