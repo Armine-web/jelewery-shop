@@ -1,8 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import StayConnected from '../StayConnected';
+import type { FooterColumn, SocialLink, ContactInfo } from './types';
 import styles from './styles.module.css';
 
-const DesktopFooter = ({ columns, socialLinks, contactInfo, onOpenModal }) => {
+type DesktopFooterProps = {
+  columns: FooterColumn[];
+  socialLinks: SocialLink[];
+  contactInfo: ContactInfo;
+  onOpenModal: () => void;
+};
+
+const DesktopFooter = ({ columns, socialLinks, contactInfo, onOpenModal }: DesktopFooterProps) => {
   const { t } = useTranslation();
 
   return (
@@ -10,9 +18,7 @@ const DesktopFooter = ({ columns, socialLinks, contactInfo, onOpenModal }) => {
       <div className={styles.columnsWrapper}>
         {columns.map((column, index) => (
           <div key={index} className={styles.column}>
-            <h1 className={styles.columnTitle}>
-              {t(`footer.columns.${column.title}`)}
-            </h1>
+            <h1 className={styles.columnTitle}>{t(`footer.columns.${column.title}`)}</h1>
             <ul className={styles.linkList}>
               {column.links.map((link, linkIndex) => (
                 <li key={linkIndex} className={styles.linkItem}>
@@ -25,9 +31,9 @@ const DesktopFooter = ({ columns, socialLinks, contactInfo, onOpenModal }) => {
           </div>
         ))}
       </div>
-      
+
       <div className={styles.stayConnectedWrapper}>
-        <StayConnected 
+        <StayConnected
           socialLinks={socialLinks}
           contactInfo={contactInfo}
           onOpenModal={onOpenModal}

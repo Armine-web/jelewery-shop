@@ -1,14 +1,27 @@
-import { Collapse, Typography } from 'antd';
+import { Collapse } from 'antd';
 import { useTranslation } from 'react-i18next';
 import StayConnected from '../StayConnected';
+import type { FooterColumn, SocialLink, ContactInfo } from './types';
 import styles from './styles.module.css';
 
-const MobileFooter = ({ columns, socialLinks, contactInfo, onOpenModal }) => {
+type PanelProps = {
+  isActive?: boolean;
+  disabled?: boolean;
+};
+
+type MobileFooterProps = {
+  columns: FooterColumn[];
+  socialLinks: SocialLink[];
+  contactInfo: ContactInfo;
+  onOpenModal: () => void;
+};
+
+const MobileFooter = ({ columns, socialLinks, contactInfo, onOpenModal }: MobileFooterProps) => {
   const { t } = useTranslation();
 
-  const renderCustomExpandIcon = (panelProps) => {
+  const renderCustomExpandIcon = (panelProps: PanelProps) => {
     return (
-      <span 
+      <span
         className={`${styles.expandIcon} ${panelProps.isActive ? styles.expandIconActive : ''}`}
       >
         |
@@ -30,7 +43,7 @@ const MobileFooter = ({ columns, socialLinks, contactInfo, onOpenModal }) => {
         ))}
       </ul>
     ),
-    
+
     className: styles.collapsePanel,
   }));
 
@@ -43,8 +56,8 @@ const MobileFooter = ({ columns, socialLinks, contactInfo, onOpenModal }) => {
         expandIcon={renderCustomExpandIcon}
         items={collapseItems}
       />
-      
-      <StayConnected 
+
+      <StayConnected
         socialLinks={socialLinks}
         contactInfo={contactInfo}
         onOpenModal={onOpenModal}

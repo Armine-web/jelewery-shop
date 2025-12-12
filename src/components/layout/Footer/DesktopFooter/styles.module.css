@@ -3,6 +3,7 @@
   justify-content: space-between;
   gap: 32px;
   padding-bottom: 15px;
+  width: 100%;
 }
 
 .columnsWrapper {
@@ -10,13 +11,13 @@
   gap: 240px;
   flex: 1;
   justify-content: center;
-  margin-left: 30px; 
+  margin-left: 30px;
+  width: 100%;
 }
 
 .stayConnectedWrapper {
   flex-shrink: 0;
   margin-left: auto;
-  
 }
 
 .column {
@@ -26,7 +27,7 @@
 
 .columnTitle {
   font-size: var(--text-regular);
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   color: var(--dark-primary);
   font-family: var(--font-heading);
   font-weight: bold;
@@ -58,4 +59,12 @@
 .link:hover {
   color: var(--color-hover-link);
   text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .columnsWrapper {
+    flex: 1;
+    gap: 100px;
+    margin-left: 30px;
+  }
 }

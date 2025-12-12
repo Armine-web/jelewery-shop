@@ -48,4 +48,4 @@ export const CONTACT_INFO = {
   email: 'kassaman.armenia@mail.ru',
 };
 
-export const BREAKPOINT_MOBILE = 958;
+export const BREAKPOINT_MOBILE = 1020;

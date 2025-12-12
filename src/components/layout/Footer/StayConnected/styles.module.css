@@ -1,6 +1,6 @@
 .stayConnected {
   min-width: 250px;
-  margin-left: 170px;
+  margin-right: 210px;
 }
 
 .stayConnectedTitle {
@@ -27,7 +27,7 @@
   font-family: var(--font-heading);
   color: var(--dark-primary);
   letter-spacing: var(--letter-spacing-medium);
-  margin: 0;
+  margin: 8px;
 }
 
 .contactInfo {
@@ -56,57 +56,73 @@
 }
 
 .signUpButton {
-  width: 75%;
-  height: auto;
-  padding: 8px 24px;
-  margin: 12px 0;
-  font-size: var(--text-regular);
+  padding: 12px 24px;
+  margin: 8px 0;
+  font-size: var(--text-small);
+  font-family: var(--font-heading);
   font-weight: 500;
-  background-color: transparent;
-  color: var(--dark-primary);
-  border: 1px solid var(--dark-primary);
-  border-radius: 30px;
+  color: var(--color-hover-link);
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .signUpButton:hover {
-  background-color: var(--color-secondary) !important;
-  color: var(--color-white) !important;
-  transform: translateY(-1px);
-  border: none !important;
-}
-
-.signUpButton:active {
-  transform: translateY(0);
+  border-color: transparent !important;
+  transform: scale(1.05);
 }
 
 .socialLinks {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   margin-top: 6px;
 }
 
 .socialLink {
-  color: #2c2c2c;
-  font-size: var(--text-large);
+  color: var(--dark-primary);
+  font-size: 28px;
   transition: color 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.facebookIcon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--dark-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-top: 2px;
+}
+
+.facebookIcon:hover {
+  background-color: var(--color-hover-link);
+}
 .socialLink:hover {
   color: var(--color-hover-link);
 }
 
-@media (max-width: 958px) {
+@media (max-width: 1200px) {
+  .stayConnected {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1020px) {
   .stayConnected {
     margin-top: 32px;
-    margin-left: 0;
+    margin-left: 8px;
   }
 
   .signUpButton {
-    width: 32%;
+    margin-left: 10px;
+  }
+  .stayConnectedTitle {
+    margin-left: 20px;
   }
 }
