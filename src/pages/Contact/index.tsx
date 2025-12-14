@@ -1,12 +1,13 @@
-import { useTranslation } from 'react-i18next';
+import ContactBanner from './components/ContactBanner';
+import ContactForm from './components/ContactForm';
+import ContactInfo from './components/contactInfo';
 
 const Contact = () => {
-  const { t } = useTranslation();
-
   return (
-    <div>
-      <h1>{t('contact.title')}</h1>
-      <p>{t('contact.description')}</p>
+    <div className="contact-page">
+      <ContactBanner />
+      <ContactInfo />
+      <ContactForm />
     </div>
   );
 };

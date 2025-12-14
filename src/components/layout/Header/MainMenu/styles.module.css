@@ -57,7 +57,7 @@ hr {
 
     .navItem {
       width: 100%;
-      border-bottom: 1px solid #f2f2f2;
+      border-bottom: 1px solid var(--light-primary);
       padding: 10px 0;
     }
 
@@ -78,12 +78,12 @@ hr {
       width: 0;
     }
 
-    hr {
+    .mobailHr {
       position: relative;
       left: -24px;
       width: calc(100% + 48px);
       border: 0;
-      border-top: 1px solid #e0dfdf;
+      border-top: 1.8px solid var(--light-primary);
     }
   }
 }

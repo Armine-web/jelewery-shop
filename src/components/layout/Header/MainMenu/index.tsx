@@ -24,7 +24,7 @@ const MainMenu = ({ onLinkClick }: MainMenuProps) => {
             </li>
           ))}
         </ul>
-        <hr />
+        <hr className={styles.mobailHr}/>
       </nav>
     </div>
   );
