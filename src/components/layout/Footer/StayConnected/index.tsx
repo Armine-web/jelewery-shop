@@ -29,7 +29,7 @@ const StayConnected = ({ socialLinks, contactInfo, onOpenModal }: StayConnectedP
       <BaseButton size="small" className={styles.signUpButton} onClick={onOpenModal}>
         {t('footer.signUpForEmail')}
       </BaseButton>
-      <h2 className={styles.contactText}>{t('footer.contactUs')}</h2>
+      <h2 className={styles.contactTitle}>{t('footer.contactUs')}</h2>
       <div className={styles.contactInfo}>
         <p className={styles.phone}>{formatPhone(contactInfo.phone)}</p>
         <a href={`mailto:${contactInfo.email}`} className={styles.email}>

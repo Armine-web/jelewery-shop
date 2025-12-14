@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Modal, Input, Button, message } from "antd";
 import { useTranslation } from "react-i18next";
 import type { EmailSignupModalProps } from "./types";
-import { MODAL_WIDTH, MODAL_TEXTS, EMAIL_VALIDATION_REGEX } from "./const";
+import { MODAL_TEXTS, EMAIL_VALIDATION_REGEX } from "./const";
 import { submitEmail } from "./utils";
 import styles from "./styles.module.css";
 
@@ -50,7 +50,7 @@ const EmailSignupModal = ({ visible, onClose }: EmailSignupModalProps) => {
       open={visible}
       onCancel={handleCancel}
       footer={null}
-      width={MODAL_WIDTH}
+      width={700}
       centered
       className={styles.modal}
     >

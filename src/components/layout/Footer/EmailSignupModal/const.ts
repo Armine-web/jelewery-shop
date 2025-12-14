@@ -1,5 +1,3 @@
-export const MODAL_WIDTH = 700;
-
 export const EMAIL_VALIDATION_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const MODAL_TEXTS = {

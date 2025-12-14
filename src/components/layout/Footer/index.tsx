@@ -1,46 +1,35 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import DesktopFooter from './DesktopFooter';
 import MobileFooter from './MobileFooter';
 import EmailSignupModal from './EmailSignupModal';
-import { FOOTER_COLUMNS, SOCIAL_LINKS, CONTACT_INFO, BREAKPOINT_MOBILE } from './const';
+import { FOOTER_COLUMNS, SOCIAL_LINKS, CONTACT_INFO } from './const';
 import styles from './styles.module.css';
 
 const Footer = () => {
-  const [isMobile, setIsMobile] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const { t } = useTranslation();
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < BREAKPOINT_MOBILE);
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.container}>
-        {isMobile ? (
-          <MobileFooter
-            columns={FOOTER_COLUMNS}
-            socialLinks={SOCIAL_LINKS}
-            contactInfo={CONTACT_INFO}
-            onOpenModal={() => setIsModalVisible(true)}
-          />
-        ) : (
+      <div className="container">
+        <div className={styles.desktopOnly}>
           <DesktopFooter
             columns={FOOTER_COLUMNS}
             socialLinks={SOCIAL_LINKS}
             contactInfo={CONTACT_INFO}
             onOpenModal={() => setIsModalVisible(true)}
           />
-        )}
+        </div>
+        <div className={styles.mobileOnly}>
+          <MobileFooter
+            columns={FOOTER_COLUMNS}
+            socialLinks={SOCIAL_LINKS}
+            contactInfo={CONTACT_INFO}
+            onOpenModal={() => setIsModalVisible(true)}
+          />
+        </div>
       </div>
 
       <div className={styles.bottomBar}>

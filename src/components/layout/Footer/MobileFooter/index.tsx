@@ -1,31 +1,18 @@
 import { Collapse } from 'antd';
 import { useTranslation } from 'react-i18next';
 import StayConnected from '../StayConnected';
-import type { FooterColumn, SocialLink, ContactInfo } from './types';
+import type { MobileFooterProps } from './types';
+import { RightOutlined } from '@ant-design/icons';
 import styles from './styles.module.css';
-
-type PanelProps = {
-  isActive?: boolean;
-  disabled?: boolean;
-};
-
-type MobileFooterProps = {
-  columns: FooterColumn[];
-  socialLinks: SocialLink[];
-  contactInfo: ContactInfo;
-  onOpenModal: () => void;
-};
 
 const MobileFooter = ({ columns, socialLinks, contactInfo, onOpenModal }: MobileFooterProps) => {
   const { t } = useTranslation();
 
-  const renderCustomExpandIcon = (panelProps: PanelProps) => {
+  const renderCustomExpandIcon = ({ isActive }: { isActive?: boolean }) => {
     return (
-      <span
-        className={`${styles.expandIcon} ${panelProps.isActive ? styles.expandIconActive : ''}`}
-      >
-        |
-      </span>
+      <RightOutlined
+        className={`${styles.expandIcon} ${isActive ? styles.expandIconActive : ''}`}
+      />
     );
   };
 

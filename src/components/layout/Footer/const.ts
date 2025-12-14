@@ -5,8 +5,8 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     title: 'help',
     links: [
       { label: 'faq', href: '/faq' },
-      { label: 'contactUs', href: '/contact us' },
-      { label: 'ourServices', href: '/ our services' },
+      { label: 'contactUs', href: '/contact-us' },
+      { label: 'ourServices', href: '/ our-services' },
       { label: 'booking', href: '/booking' },
       { label: 'checkout', href: '/checkout' },
       { label: 'workingHours', href: '/contact' },
@@ -48,4 +48,4 @@ export const CONTACT_INFO = {
   email: 'kassaman.armenia@mail.ru',
 };
 
-export const BREAKPOINT_MOBILE = 1020;
+

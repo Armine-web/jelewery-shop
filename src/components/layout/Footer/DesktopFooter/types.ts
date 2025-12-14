@@ -15,3 +15,9 @@ export type ContactInfo = {
   phone: string;
   email: string;
 };
+export type DesktopFooterProps = {
+  columns: FooterColumn[];
+  socialLinks: SocialLink[];
+  contactInfo: ContactInfo;
+  onOpenModal: () => void;
+};

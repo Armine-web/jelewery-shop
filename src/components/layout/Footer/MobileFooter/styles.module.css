@@ -1,4 +1,5 @@
 .mobileFooter {
+  
   padding-bottom: 32px;
   margin-left: 8px;
 }
@@ -35,8 +36,8 @@
 }
 
 .expandIcon {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: var(--text-regular) !important;
+  font-weight: 400;
   margin-right: 10px;
   color: var(--dark-primary) !important;
   transition: transform 0.3s ease;
@@ -72,4 +73,10 @@
 .link:hover {
   color: var(--color-hover-link);
   text-decoration: underline;
+}
+
+@media (max-width: 1020px) {
+  .mobileFooter {
+    display: block;
+  }
 }

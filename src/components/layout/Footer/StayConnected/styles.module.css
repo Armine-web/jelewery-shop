@@ -1,7 +1,7 @@
-.stayConnected {
-  min-width: 250px;
-  margin-right: 210px;
-}
+ .stayConnected {
+  min-width: 150px;
+  /* margin-right: 220px;  */
+} 
 
 .stayConnectedTitle {
   font-size: var(--text-regular);
@@ -9,25 +9,29 @@
   color: var(--dark-primary);
   font-family: var(--font-heading);
   text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-medium);
   margin-top: 0;
   font-weight: bold;
+  margin-bottom: 28px;
 }
 
 .description {
   color: var(--dark-primary);
   font-family: var(--font-heading);
   font-size: var(--text-small);
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   line-height: 1.5;
   display: block;
 }
 
-.contactText {
+.contactTitle {
   font-size: var(--text-regular);
   font-family: var(--font-heading);
   color: var(--dark-primary);
   letter-spacing: var(--letter-spacing-medium);
-  margin: 8px;
+  font-weight: 400;
+  margin: 28px ;
+  margin-left: 0;
 }
 
 .contactInfo {
@@ -116,13 +120,14 @@
 @media (max-width: 1020px) {
   .stayConnected {
     margin-top: 32px;
-    margin-left: 8px;
+    /* margin-left: 8px; */
   }
 
   .signUpButton {
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .stayConnectedTitle {
     margin-left: 20px;
   }
+ 
 }
