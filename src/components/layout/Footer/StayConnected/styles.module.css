@@ -1,8 +1,3 @@
- .stayConnected {
-  min-width: 150px;
-  /* margin-right: 220px;  */
-} 
-
 .stayConnectedTitle {
   font-size: var(--text-regular);
   margin-bottom: 20px;
@@ -30,7 +25,7 @@
   color: var(--dark-primary);
   letter-spacing: var(--letter-spacing-medium);
   font-weight: 400;
-  margin: 28px ;
+  margin: 28px;
   margin-left: 0;
 }
 
@@ -120,7 +115,6 @@
 @media (max-width: 1020px) {
   .stayConnected {
     margin-top: 32px;
-    /* margin-left: 8px; */
   }
 
   .signUpButton {
@@ -129,5 +123,4 @@
   .stayConnectedTitle {
     margin-left: 20px;
   }
- 
 }
