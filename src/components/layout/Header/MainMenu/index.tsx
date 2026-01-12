@@ -14,7 +14,7 @@ const MainMenu = ({ onClick, isDrawer = false }: MainMenuProps) => {
           <li key={item.label} className={styles.navItem}>
             <NavLink
               to={item.path}
-              className={({ isActive }) => (isActive ? styles.active : '')}
+              className={({ isActive }) => `${isActive ? styles.active : ''} underlineEffect`}
               onClick={onClick}
             >
               {t(`${item.label}.title`)}

@@ -15,4 +15,5 @@
 
 :global(.ant-btn-link):hover {
   color: var(--color-hover-link) !important;
+  opacity: 0.6;
 }

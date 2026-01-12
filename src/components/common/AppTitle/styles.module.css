@@ -1,0 +1,30 @@
+.pageTitle {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  line-height: var(--line-height-title);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-large);
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: var(--line-height-text);
+  color: var(--dark-primary);
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  display: inline-block;
+  font-weight: 500;
+  font-size: var(--text-small);
+  letter-spacing: var(--letter-spacing-small);
+  line-height: var(--line-height-text);
+  color: var(--dark-primary);
+  text-transform: capitalize;
+  cursor: pointer;
+}
