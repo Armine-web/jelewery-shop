@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import type { RootState, AppDispatch } from '../../store/index';
+import { useDispatch } from 'react-redux';
+import type { AppDispatch } from '../../store/index';
 import { fetchProducts } from '../../store/slices/productsSlice';
-import ProductCard from '../../components/product/ProductCard';
-import BannerSlider from '../../components/common/BannerSlider';
+import FeaturedCategories from './FeaturedCategories/index';
+import Bestsellers from './Bestsellers/index';
+import HeroBanner from './HeroBanner';
 
 const Home = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const { products, loading } = useSelector((state: RootState) => state.products);
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -15,12 +15,10 @@ const Home = () => {
 
   return (
     <>
-      <BannerSlider />
+      <HeroBanner />
       <div className="container">
-        {loading && <div>Loading...</div>}
-        {products.map(product => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+        <FeaturedCategories />
+        <Bestsellers />
       </div>
     </>
   );

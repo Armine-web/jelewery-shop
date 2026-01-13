@@ -31,23 +31,6 @@
   color: var(--dark-primary);
 }
 
-.navItem > a::after {
-  content: '';
-  position: absolute;
-  top: 20px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-color: var(--color-hover-link);
-  width: 0;
-  transition: width 0.25s ease;
-}
-
-.navItem > a:hover::after {
-  width: calc(100%);
-}
-
 .navItem > a:hover {
   font-weight: 600;
 }

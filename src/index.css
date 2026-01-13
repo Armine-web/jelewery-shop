@@ -1,7 +1,7 @@
 :root {
   --color-primary: #ffffff;
   --color-secondary: #b13024;
-  --color-hover-link: #850710;
+  --color-hover-link: #921813;
   --dark-primary: #1d1c1c;
   --font-heading: 'Brilliant Cut Pro';
   --font-body: 'Fancy Cut Pro', Almarai, Times, serif;
@@ -38,8 +38,8 @@ body {
 
 h1,
 h2 {
-  line-height: var(--line-height-title);
   font-family: var(--font-heading);
+  color: var(--dark-primary);
 }
 
 a {
@@ -61,4 +61,25 @@ ul {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.underlineEffect {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.underlineEffect::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-hover-link);
+  transition: width 0.25s ease;
+}
+
+.underlineEffect:hover::after {
+  width: 100%;
 }

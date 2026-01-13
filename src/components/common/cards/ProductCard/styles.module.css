@@ -1,0 +1,39 @@
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 10px;
+}
+
+:global(.ant-card .ant-card-cover > *) {
+  border-radius: 0;
+}
+
+:global(.ant-card .ant-card-body) {
+  padding: 0;
+}
+
+:global(.ant-card .ant-card-meta-title) {
+  color: var(--dark-primary);
+  font-family: var(--font-heading);
+  font-size: var(--text-small);
+  letter-spacing: var(--letter-spacing-medium);
+  cursor: pointer;
+}
+
+:global(.ant-card .ant-card-meta-description) {
+  color: var(--dark-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-regular);
+  letter-spacing: var(--letter-spacing-small);
+  margin-bottom: 8px;
+}
+
+.price {
+  color: var(--color-secondary);
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-medium);
+  padding-top: 2px;
+}
