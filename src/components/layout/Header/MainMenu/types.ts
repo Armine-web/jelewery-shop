@@ -1,3 +1,4 @@
 export type MainMenuProps = {
-  onLinkClick?: () => void;
+  isDrawer?: boolean;
+  onClick?: () => void;
 };

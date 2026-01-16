@@ -17,15 +17,16 @@
   height: 30px;
   width: auto;
   cursor: pointer;
-  display: block;
+  display: inline-block;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 @media (max-width: 480px) {
   .logoContainer {
     gap: 2px;
   }
-  
+
   .logoText {
     font-size: var(--text-regular);
     letter-spacing: 0.1px;

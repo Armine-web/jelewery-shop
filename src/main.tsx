@@ -5,6 +5,9 @@ import { Provider } from 'react-redux';
 import { store } from './store/index.ts';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import App from './App.tsx';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import './i18n';
 import './index.css';
 
