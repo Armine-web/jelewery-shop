@@ -32,29 +32,7 @@
   width: 0;
 }
 
-.contactInfoHeading {
-  font-size: var(--text-regular);
-  font-family: var(--font-heading);
-  margin-bottom: 14px;
-  letter-spacing: var(--letter-spacing-medium);
-  font-weight: 600;
-  text-transform: uppercase;
-}
 
-.contactInfoWrapper p {
-  font-size: var(--text-regular);
-  font-family: var(--font-body);
-  color: var(--dark-primary);
-  letter-spacing: var(--letter-spacing-small);
-  font-weight: 400;
-}
-
-.ontactInfoIcons {
-  font-size: var(--text-large);
-  font-family: var(--font-heading);
-  margin-right: 16px;
-  color: var(--dark-primary);
-}
 
 @media (max-width: 1023px) {
   .contactInfoWrapper {

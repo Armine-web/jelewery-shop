@@ -1,4 +1,4 @@
-import type { ContactRequest } from '../pages/Contact/components/ContactForm/types.ts';
+import type { ContactRequest } from '../pages/Contact/ContactForm/types';
 
 export const postContact = async (data: ContactRequest): Promise<void> => {
   const shouldFail = false;

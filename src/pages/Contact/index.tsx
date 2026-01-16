@@ -1,6 +1,6 @@
-import ContactBanner from './components/ContactBanner';
-import ContactForm from './components/ContactForm';
-import ContactInfo from './components/contactInfo';
+import ContactBanner from './ContactBanner';
+import ContactForm from './ContactForm';
+import ContactInfo from './ContactInfo';
 
 const Contact = () => {
   return (

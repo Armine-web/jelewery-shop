@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { contactBannerImage } from '../../../../assets/img/contact';
+import { contactBannerImage } from '../../../assets/img/contact';
 import styles from './styles.module.css';
 
 const ContactBanner = () => {
