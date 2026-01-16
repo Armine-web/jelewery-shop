@@ -39,7 +39,7 @@ hr {
   border: 0;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .nav:not(.drawerNav) {
     display: none;
   }

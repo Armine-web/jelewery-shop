@@ -113,7 +113,8 @@
     "consentRequired": "You must give consent",
     "formSuccess": "Your message has been sent successfully!",
     "formError": "Something went wrong, please try again.",
-    "typeMessage": "Type your message..."
+    "typeMessage": "Type your message...",
+    "signIn": "Sign In"
   },
   "faq": {
     "title": "FAQ",
