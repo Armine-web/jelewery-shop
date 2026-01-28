@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useToggle } from '../../../hooks/useToggle';
+import { useLang } from '../../../hooks/useLang';
 import Logo from './Logo/index';
 import MainMenu from './MainMenu';
 import User from './User';
@@ -10,7 +11,6 @@ import Hamburger from './Hamburger';
 import ShoppingCartDrawer from './ShopCartDrawer';
 import MenuDrawer from './MenuDrawer';
 import styles from './styles.module.css';
-import { useLang } from '../../../hooks/useLang';
 
 const Header = () => {
   const { currentLang, changeLanguage } = useLang();
@@ -24,7 +24,10 @@ const Header = () => {
       <div className="container">
         <div className={styles.headerContent}>
           <Hamburger onClick={menu.toggle} />
-          <Logo />
+          <div className={styles.logoContainer}>
+            <Logo />
+          </div>
+          
           <div className={styles.menuDesktop}>
             <MainMenu />
           </div>
@@ -32,11 +35,11 @@ const Header = () => {
             <div className={styles.hideOnMobile}>
               <User />
             </div>
-            <LanguageSwitcher currentLang={currentLang} onChange={changeLanguage} />
-            <BookingCart count={1} onClick={() => navigate('/booking')} />
-            <ShoppingCart count={1} onClick={cart.toggle} />
+            <BookingCart count={0} onClick={() => navigate('/booking')} />
+            <ShoppingCart count={0} onClick={cart.toggle} />
             <ShoppingCartDrawer open={cart.isOpen} onClose={cart.close} />
             <MenuDrawer open={menu.isOpen} onClose={menu.close} />
+            <LanguageSwitcher currentLang={currentLang} onChange={changeLanguage} />
           </div>
         </div>
       </div>

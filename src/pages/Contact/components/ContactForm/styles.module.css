@@ -14,9 +14,34 @@
   display: none;
 }
 
+.contactFormWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 80px;
+}
+
+.contactFormImageWrapper {
+  justify-self: end;
+}
+
 .contactForm {
-  max-width: 600px;
-  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 60px 40px;
+  width: 100%;
+  justify-self: start;
+}
+
+.contactFormItemsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.teleramWrapper {
+  grid-column: span 2;
+  grid-row: 2;
 }
 
 :global(.ant-input:focus),
@@ -84,7 +109,7 @@
 .checkmark {
   width: 18px;
   height: 18px;
-  border: 1px solid var(--light-primary);
+  border: 1px solid var(--dark-primary);
   border-radius: 2px;
   background: transparent;
   transition: all 0.2s;
@@ -96,7 +121,7 @@
 }
 
 .customCheckbox:hover .checkmark {
-  border-color: var(--light-primary);
+  border-color: var(--dark-primary);
   background: var(--light-primary);
 }
 
@@ -124,7 +149,7 @@
 .customCheckbox :global(.ant-checkbox-inner) {
   width: 18px !important;
   height: 18px !important;
-  border: 1px solid var(--light-primary) !important;
+  border: 1px solid var(--dark-primary) !important;
   border-radius: 2px !important;
   background: transparent !important;
   transition: all 0.2s !important;
@@ -135,7 +160,7 @@
 }
 
 .customCheckbox:hover :global(.ant-checkbox-inner) {
-  border-color: var(--light-primary) !important;
+  border-color: var(--dark-primary) !important;
   background: var(--light-primary) !important;
 }
 
@@ -198,7 +223,50 @@
   opacity: 0.8;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
+  .contactFormWrapper {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contactFormWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+
+  .contactFormImageWrapper {
+    margin: auto;
+    width: 80%;
+  }
+
+  .contactFormItemsWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .teleramWrapper {
+    grid-column: span 1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactFormImageWrapper {
+    width: 100%;
+  }
+
+  .contactFormDecstopHr{
+    margin: 80px 0;
+  }
+
+  .contactForm {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+
+.contactFormWrapper @media (max-width: 480px) {
   .contactFormDecstopHr {
     display: none;
   }

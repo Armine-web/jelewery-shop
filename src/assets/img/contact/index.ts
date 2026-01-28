@@ -1,3 +1,6 @@
-import contactBannerImage from './contact-banner.png';
+import contactBannerImage from './contact-img.png';
+import contactBg from './bg-contact.png';
+import formImg from './form-img.png';
+import contactHero from './contact-hero.png';
 
-export {contactBannerImage}   
+export {contactBannerImage, contactBg, formImg, contactHero}

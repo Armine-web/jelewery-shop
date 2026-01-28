@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import { contactBannerImage } from '../../../assets/img/contact';
+import { contactBannerImage, contactBg } from '../../../../assets/img/contact';
 import styles from './styles.module.css';
 
 const ContactBanner = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.contactPage}>
+    <div className={styles.contactPage} style={{ backgroundImage: `url(${contactBg})` }}>
       <div className={styles.contactImage}>
         <img src={contactBannerImage} alt="contact-banner" />
       </div>

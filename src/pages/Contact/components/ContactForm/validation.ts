@@ -24,9 +24,6 @@ export const emailRule: Rule = ({ getFieldValue }) => ({
     }
 
     await new Promise(resolve => setTimeout(resolve, 500));
-    if (value === 'test@example.com') {
-      throw new Error('Email already registered');
-    }
 
     return true;
   },

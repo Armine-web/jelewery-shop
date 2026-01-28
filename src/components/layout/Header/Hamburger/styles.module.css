@@ -12,5 +12,6 @@
 @media (max-width: 480px) {
   .hamburger {
     font-size: 18px;
+    grid-row: 2;
   }
 }
