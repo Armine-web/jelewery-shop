@@ -32,7 +32,7 @@ import ring7 from '../assets/img/rings/ring7.jpg';
 import ring8 from '../assets/img/rings/ring8.jpg';
 import ring10 from '../assets/img/rings/ring10.jpg';
 
-export const mockProducts: Product[] = [
+export const MOCK_PRODUCTS: Product[] = [
   {
     id: '1',
     nameKey: 'goldPrestigeBracelet',
@@ -44,6 +44,7 @@ export const mockProducts: Product[] = [
     price: 3500,
     currency: 'USD',
     image: bracelet1,
+    inStock: true,
   },
   {
     id: '2',
@@ -56,6 +57,7 @@ export const mockProducts: Product[] = [
     price: 250,
     currency: 'USD',
     image: bracelet2,
+    inStock: true,
   },
   {
     id: '3',
@@ -68,6 +70,7 @@ export const mockProducts: Product[] = [
     price: 3100,
     currency: 'USD',
     image: bracelet5,
+    inStock: true,
   },
   {
     id: '4',
@@ -80,6 +83,7 @@ export const mockProducts: Product[] = [
     price: 120,
     currency: 'USD',
     image: bracelet4,
+    inStock: true,
   },
   {
     id: '5',
@@ -92,6 +96,7 @@ export const mockProducts: Product[] = [
     price: 100,
     currency: 'USD',
     image: bracelet3,
+    inStock: true,
   },
   {
     id: '6',
@@ -104,6 +109,7 @@ export const mockProducts: Product[] = [
     price: 1700,
     currency: 'USD',
     image: bracelet6,
+    inStock: true,
   },
   {
     id: '7',
@@ -116,6 +122,7 @@ export const mockProducts: Product[] = [
     price: 175,
     currency: 'USD',
     image: bracelet7,
+    inStock: true,
   },
   {
     id: '8',
@@ -128,6 +135,7 @@ export const mockProducts: Product[] = [
     price: 6200,
     currency: 'USD',
     image: bracelet8,
+    inStock: true,
   },
   {
     id: '9',
@@ -140,6 +148,7 @@ export const mockProducts: Product[] = [
     price: 320,
     currency: 'USD',
     image: cufflinks1,
+    inStock: true,
   },
   {
     id: '10',
@@ -152,6 +161,7 @@ export const mockProducts: Product[] = [
     price: 130,
     currency: 'USD',
     image: cufflinks2,
+    inStock: true,
   },
   {
     id: '11',
@@ -164,6 +174,7 @@ export const mockProducts: Product[] = [
     price: 120,
     currency: 'USD',
     image: cufflinks3,
+    inStock: true,
   },
   {
     id: '12',
@@ -176,6 +187,7 @@ export const mockProducts: Product[] = [
     price: 200,
     currency: 'USD',
     image: cufflinks4,
+    inStock: true,
   },
   {
     id: '13',
@@ -188,6 +200,7 @@ export const mockProducts: Product[] = [
     price: 2100,
     currency: 'USD',
     image: cufflinks5,
+    inStock: true,
   },
   {
     id: '14',
@@ -200,6 +213,7 @@ export const mockProducts: Product[] = [
     price: 110,
     currency: 'USD',
     image: cufflinks6,
+    inStock: true,
   },
   {
     id: '15',
@@ -212,6 +226,7 @@ export const mockProducts: Product[] = [
     price: 110,
     currency: 'USD',
     image: cufflinks7,
+    inStock: true,
   },
   {
     id: '16',
@@ -224,6 +239,7 @@ export const mockProducts: Product[] = [
     price: 400,
     currency: 'USD',
     image: cufflinks8,
+    inStock: true,
   },
   {
     id: '17',
@@ -236,6 +252,7 @@ export const mockProducts: Product[] = [
     price: 220,
     currency: 'USD',
     image: cufflinks9,
+    inStock: true,
   },
   {
     id: '18',
@@ -248,6 +265,7 @@ export const mockProducts: Product[] = [
     price: 260,
     currency: 'USD',
     image: necklace1,
+    inStock: true,
   },
   {
     id: '19',
@@ -260,6 +278,7 @@ export const mockProducts: Product[] = [
     price: 320,
     currency: 'USD',
     image: necklace2,
+    inStock: true,
   },
   {
     id: '20',
@@ -272,6 +291,7 @@ export const mockProducts: Product[] = [
     price: 320,
     currency: 'USD',
     image: necklace3,
+    inStock: true,
   },
   {
     id: '21',
@@ -284,6 +304,7 @@ export const mockProducts: Product[] = [
     price: 350,
     currency: 'USD',
     image: necklace4,
+    inStock: true,
   },
   {
     id: '22',
@@ -296,6 +317,7 @@ export const mockProducts: Product[] = [
     price: 750,
     currency: 'USD',
     image: necklace5,
+    inStock: true,
   },
   {
     id: '23',
@@ -308,6 +330,7 @@ export const mockProducts: Product[] = [
     price: 350,
     currency: 'USD',
     image: necklace6,
+    inStock: true,
   },
   {
     id: '24',
@@ -320,6 +343,7 @@ export const mockProducts: Product[] = [
     price: 2800,
     currency: 'USD',
     image: ring1,
+    inStock: true,
   },
   {
     id: '25',
@@ -332,6 +356,7 @@ export const mockProducts: Product[] = [
     price: 2200,
     currency: 'USD',
     image: ring2,
+    inStock: true,
   },
   {
     id: '26',
@@ -344,6 +369,7 @@ export const mockProducts: Product[] = [
     price: 200,
     currency: 'USD',
     image: ring3,
+    inStock: true,
   },
   {
     id: '27',
@@ -356,6 +382,7 @@ export const mockProducts: Product[] = [
     price: 6000,
     currency: 'USD',
     image: ring4,
+    inStock: true,
   },
   {
     id: '28',
@@ -368,6 +395,7 @@ export const mockProducts: Product[] = [
     price: 350,
     currency: 'USD',
     image: ring5,
+    inStock: true,
   },
   {
     id: '29',
@@ -380,6 +408,7 @@ export const mockProducts: Product[] = [
     price: 800,
     currency: 'USD',
     image: ring6,
+    inStock: true,
   },
   {
     id: '30',
@@ -392,6 +421,7 @@ export const mockProducts: Product[] = [
     price: 700,
     currency: 'USD',
     image: ring7,
+    inStock: true,
   },
   {
     id: '31',
@@ -404,6 +434,7 @@ export const mockProducts: Product[] = [
     price: 1200,
     currency: 'USD',
     image: ring8,
+    inStock: true,
   },
   {
     id: '32',
@@ -416,5 +447,6 @@ export const mockProducts: Product[] = [
     price: 920,
     currency: 'USD',
     image: ring10,
+    inStock: true,
   },
 ];

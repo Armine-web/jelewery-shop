@@ -6,4 +6,6 @@
   overflow-x: hidden;
 }
 
-
+.main {
+  margin-top: var(--header-height);
+}

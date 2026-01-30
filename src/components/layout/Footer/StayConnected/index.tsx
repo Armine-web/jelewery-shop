@@ -1,4 +1,4 @@
-import BaseButton  from '../../../common/BaseButton';
+import BaseButton from '../../../common/buttons/BaseButton';
 import { TwitterOutlined, InstagramOutlined, YoutubeOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import type { StayConnectedProps } from './types';

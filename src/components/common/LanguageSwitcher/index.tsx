@@ -4,7 +4,7 @@ import { LANGUAGES } from './const';
 import type { LanguageSwitcherProps } from './types';
 
 const LanguageSwitcher = ({ currentLang, onChange }: LanguageSwitcherProps) => {
-  const currentItem = LANGUAGES.find(l => l.key === currentLang) || LANGUAGES[0];
+  const currentItem = LANGUAGES.find(lang => lang.key === currentLang) || LANGUAGES[0];
 
   const items: MenuProps['items'] = LANGUAGES.map(item => ({
     key: item.key,

@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 import { useTranslation } from 'react-i18next';
 import contactHero from '../../../../assets/img/contact/contact-hero.png';
-import { logoImg } from '../../../../assets/img/logo';
+import { contactLogo } from '../../../../assets/img/contact';
 
 function ContactUsHero() {
   const { t } = useTranslation();
@@ -13,7 +13,7 @@ function ContactUsHero() {
           <p>{t('contact.contactUsHero')}</p>
         </div>
               <div className={styles.contactLogo}>
-        <img src={logoImg} alt="logo" />
+        <img src={contactLogo} alt="logo" />
       </div>
       </div>
 

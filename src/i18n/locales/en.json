@@ -44,6 +44,36 @@
     ],
     "featuredCategories": {
       "title": "Featured Categories"
+    },
+    "philosophy": {
+      "title": "Always in progress",
+      "description": "Kassaman has grown organically, supported by those who have been with us since the beginning. For us, the process of creation is a continuous journey. We believe in steady progress and staying true to the craft — a core principle that guides everything we do. Each piece is a reflection of this simple, ongoing evolution.",
+      "cta": "Discover our story",
+      "images": {
+        "featured": "Exquisite handcrafted creation",
+        "sketch": "From sketch to reality: the creative process",
+        "process1": "Artisan's hands shaping the future piece",
+        "process2": "Traditional jewelry crafting techniques",
+        "process3": "Dedicated focus on every small detail"
+      }
+    },
+    "advantages": {
+      "materials": {
+        "title": "Certified materials",
+        "description": "Ethically sourced metals and GIA certified gemstones."
+      },
+      "resizing": {
+        "title": "Free resizing",
+        "description": "Complimentary adjustment for a perfect, lifelong fit."
+      },
+      "cleaning": {
+        "title": "Lifetime cleaning",
+        "description": "Professional care to preserve the brilliance of your jewelry."
+      },
+      "delivery": {
+        "title": "Free delivery",
+        "description": "Insured worldwide shipping in our signature packaging."
+      }
     }
   },
   "catalog": {
@@ -57,6 +87,10 @@
   "collections": {
     "title": "Collections",
     "description": "Explore our collections."
+  },
+  "collection": {
+    "title": "Collection",
+    "description": "Explore our collection"
   },
   "category": {
     "title": "Category",
@@ -150,6 +184,24 @@
     "cufflinks": {
       "title": "Cufflinks",
       "subtitle": "Refined style for special occasions"
+    }
+  },
+  "productCollections": {
+    "signature": {
+      "title": "Signature",
+      "subtitle": "The essence of our brand's unique identity"
+    },
+    "timeless": {
+      "title": "Timeless",
+      "subtitle": "Classic elegance that transcends generations"
+    },
+    "prestige": {
+      "title": "Prestige",
+      "subtitle": "Exceptional craftsmanship for special moments"
+    },
+    "wedding": {
+      "title": "Wedding",
+      "subtitle": "Elegant symbols for your beginning of forever"
     }
   },
   "products": {
@@ -348,6 +400,9 @@
   },
   "productCard": {
     "book": "Book an item"
+  },
+  "errors": {
+    "default": "Something went wrong. Please try again later"
   },
   "footer": {
     "stayConnected": "Stay Connected",

@@ -1,66 +1,20 @@
 .logoContainer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logoText {
-  font-size: var(--text-large);
-  font-weight: bold;
-  cursor: pointer;
-  color: var(--dark-primary);
-  font-family: var(--font-accent);
-  letter-spacing: var(--letter-spacing-small);
+  width: 100px;
 }
 
 .logo {
-  height: 70px;
-  width: auto;
   cursor: pointer;
   display: inline-block;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-@media (max-width: 1200px) {
-  .logoContainer {
-    gap: 5px;
-  }
-
-  .logoText {
-    font-size: var(--text-regular);
-    letter-spacing: 0.1px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .logoContainer {
-    gap: 10px;
-  }
-
-  .logoText {
-    font-size: var(--text-large);
-    letter-spacing: var(list--spacing-small);
-  }
 }
 
 @media (max-width: 768px) {
   .logoContainer {
-    gap: 2px;
-  }
-
-  .logoText {
-    font-size: var(--text-regular);
-    letter-spacing: 0.1px;
-  }
-
-  .logo {
-    height: 50px;
+    width: 80px;
   }
 }
 
 @media (max-width: 480px) {
-  .logo {
-    height: 40px;
+  .logoContainer {
+    width: 60px;
   }
 }

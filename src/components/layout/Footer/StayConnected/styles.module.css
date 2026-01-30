@@ -1,29 +1,29 @@
 .stayConnectedTitle {
-  font-size: var(--text-regular);
+  font-size: var(--fs-200);
   margin-bottom: 20px;
-  color: var(--dark-primary);
+  color: var(--color-text);
   font-family: var(--font-heading);
   text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-medium);
+  letter-spacing: var(--ls-200);
   margin-top: 0;
   font-weight: bold;
   margin-bottom: 28px;
 }
 
 .description {
-  color: var(--dark-primary);
+  color: var(--color-text);
   font-family: var(--font-heading);
-  font-size: var(--text-small);
+  font-size: var(--fs-100);
   margin-bottom: 10px;
   line-height: 1.5;
   display: block;
 }
 
 .contactTitle {
-  font-size: var(--text-regular);
+  font-size: var(--fs-200);
   font-family: var(--font-heading);
-  color: var(--dark-primary);
-  letter-spacing: var(--letter-spacing-medium);
+  color: var(--color-text);
+  letter-spacing: var(--ls-200);
   font-weight: 400;
   margin: 28px;
   margin-left: 0;
@@ -34,18 +34,18 @@
 }
 
 .phone {
-  font-size: var(--text-regular);
-  color: var(--dark-primary);
+  font-size: var(--fs-200);
+  color: var(--color-text);
   margin-bottom: 8px;
   font-weight: 500;
   display: block;
 }
 
 .email {
-  color: var(--dark-primary);
+  color: var(--color-text);
   font-family: var(--font-heading);
   text-decoration: underline;
-  font-size: var(--text-regular);
+  font-size: var(--fs-200);
   display: block;
   transition: color 0.2s ease;
 }
@@ -57,7 +57,7 @@
 .signUpButton {
   padding: 12px 24px;
   margin: 8px 0;
-  font-size: var(--text-small);
+  font-size: var(--fs-100);
   font-family: var(--font-heading);
   font-weight: 500;
   color: var(--color-hover-link);
@@ -76,7 +76,7 @@
 }
 
 .socialLink {
-  color: var(--dark-primary);
+  color: var(--color-text);
   font-size: 28px;
   transition: color 0.2s ease;
   display: flex;
@@ -87,7 +87,7 @@
 .facebookIcon {
   width: 24px;
   height: 24px;
-  background-color: var(--dark-primary);
+  background-color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;

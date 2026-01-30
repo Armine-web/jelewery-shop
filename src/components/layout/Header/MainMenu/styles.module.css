@@ -24,11 +24,11 @@
 
 .navItem a {
   position: relative;
-  font-size: var(--text-small);
-  letter-spacing: var(--letter-spacing-medium);
+  font-size: var(--fs-100);
+  letter-spacing: var(--ls-200);
   text-transform: uppercase;
   font-family: var(--font-heading);
-  color: var(--dark-primary);
+  color: var(--color-text);
 }
 
 .navItem > a:hover {

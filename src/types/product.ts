@@ -1,4 +1,4 @@
-export type Category = 'rings' | 'necklaces' | 'bracelets' | 'cufflinks' | (string & {});
+export type CategorySlug = 'rings' | 'necklaces' | 'bracelets' | 'cufflinks' | (string & {});
 
 export type Collection = 'signature' | 'timeless' | 'prestige' | 'wedding';
 
@@ -21,7 +21,7 @@ export type Currency = 'USD' | 'RUB' | 'AMD';
 export type Product = {
   id: string;
   nameKey: string;
-  category: Category;
+  category: CategorySlug;
   collections: Collection[];
   material?: Material[];
   stone?: Stone[];
@@ -29,4 +29,5 @@ export type Product = {
   price: number;
   currency: Currency;
   image: string;
+  inStock: boolean;
 };

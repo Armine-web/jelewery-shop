@@ -1,13 +1,28 @@
 .header {
-  background-color: var(--color-primary);
+  transition: background-color 0.3s ease;
   width: 100%;
+}
+
+.headerDark {
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.headerDark:hover {
+  opacity: 1;
+}
+
+
+.headerLight {
+  background-color: var(--color-background);
 }
 
 .headerContent {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 .logoContainer {
@@ -49,11 +64,11 @@
 @media (max-width: 768px) {
   .header {
     gap: 8px;
+    opacity: .8;
   }
 
-  .headerContent {
-    grid-template-columns: 1fr 1fr 8fr;
-  }
+
+
 }
 
 @media (max-width: 480px) {
@@ -62,7 +77,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    row-gap: 16px;
   }
 
   .logoContainer {

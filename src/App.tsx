@@ -7,11 +7,12 @@ import Booking from './pages/Booking';
 import Catalog from './pages/Catalog';
 import Checkout from './pages/Checkout';
 import Collections from './pages/Collections';
+import Collection from './pages/Collection';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import ProductPage from './pages/ProductPage';
+import Product from './pages/Product';
 import Services from './pages/Services';
 import Category from './pages/Category';
 
@@ -22,8 +23,9 @@ function App() {
         <Route index element={<Home />} />
         <Route path="catalog" element={<Catalog />} />
         <Route path="catalog/:categorySlug" element={<Category />} />
-        <Route path="product/:id" element={<ProductPage />} />
+        <Route path="product/:id" element={<Product />} />
         <Route path="collections" element={<Collections />} />
+        <Route path="collections/:slug" element={<Collection />} />
         <Route path="services" element={<Services />} />
         <Route path="booking" element={<Booking />} />
         <Route path="checkout" element={<Checkout />} />

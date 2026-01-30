@@ -5,11 +5,11 @@ export type BaseCardProps = {
     src: string;
     alt?: string;
   };
+  children: ReactNode;
   imageNode?: ReactNode;
   onImageClick?: () => void;
   width?: string | number;
   height?: string | number;
-  children: ReactNode;
   className?: string;
   imageClassName?: string;
 };

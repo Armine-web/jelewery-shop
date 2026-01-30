@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <main>
+      <main className={styles.main}>
         <Outlet />
       </main>
       <Footer />

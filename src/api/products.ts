@@ -1,10 +1,15 @@
+import { MOCK_PRODUCTS } from '../moc/mockProducts';
 import type { Product } from '../types/product';
-import { mockProducts } from '../moc/mockProducts';
 
-export const getProducts = async (): Promise<Product[]> => {
+export const getProducts = async (categorySlug?: string): Promise<Product[]> => {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve(mockProducts);
-    }, 500);
+      if (categorySlug && categorySlug.trim() !== '') {
+        const filtered = MOCK_PRODUCTS.filter(product => product.category === categorySlug);
+        resolve(filtered);
+      } else {
+        resolve(MOCK_PRODUCTS);
+      }
+    }, 800);
   });
 };

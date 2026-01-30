@@ -1,25 +1,25 @@
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import type { AppDispatch } from '../../store/index';
-import { fetchProducts } from '../../store/slices/productsSlice';
-import FeaturedCategories from './FeaturedCategories/index';
-import Bestsellers from './Bestsellers/index';
-import HeroBanner from './HeroBanner';
+import VideoBanner from './components/VideoBanner';
+import FeaturedCategories from './components/FeaturedCategories/index';
+import FeaturedCollections from './components/FeaturedCollections';
+import Bestsellers from './components/Bestsellers/index';
+import Philosophy from './components/Philosophy';
+import Advantages from './components/Advantages';
+import styles from './styles.module.css';
+
 
 const Home = () => {
-  const dispatch = useDispatch<AppDispatch>();
-
-  useEffect(() => {
-    dispatch(fetchProducts());
-  }, [dispatch]);
-
   return (
     <>
-      <HeroBanner />
+      <VideoBanner />
       <div className="container">
-        <FeaturedCategories />
-        <Bestsellers />
+        <div className={styles.homeContent}>
+          <FeaturedCategories />
+          <FeaturedCollections />
+          <Bestsellers />
+          <Philosophy />
+        </div>
       </div>
+      <Advantages />
     </>
   );
 };

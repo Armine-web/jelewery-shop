@@ -7,6 +7,7 @@
   flex-wrap: nowrap;
   padding-bottom: 15px;
   margin-left: 32px;
+  padding: var(--section-padding-y) 0;
 }
 
 .column {
@@ -18,12 +19,12 @@
   min-width: 250px;
 }
 .columnTitle {
-  font-size: var(--text-regular);
+  font-size: var(--fs-200);
   margin-bottom: 28px;
-  color: var(--dark-primary);
+  color: var(--color-text);
   font-family: var(--font-heading);
   font-weight: bold;
-  letter-spacing: var(--letter-spacing-medium);
+  letter-spacing: var(--ls-200);
   text-transform: uppercase;
   margin-top: 0;
 }
@@ -39,12 +40,12 @@
 }
 
 .link {
-  color: var(--dark-primary);
+  color: var(--color-text);
   text-decoration: none;
-  font-size: var(--text-small);
+  font-size: var(--fs-100);
   text-transform: uppercase;
   font-family: var(--font-heading);
-  letter-spacing: var(--letter-spacing-medium);
+  letter-spacing: var(--ls-200);
   transition: color 0.2s ease;
 }
 
@@ -69,15 +70,15 @@
 }
 
 .collapse :global(.ant-collapse-item) {
-  border-bottom: 1px solid var(--dark-primary) !important;
+  border-bottom: 1px solid var(--color-text) !important;
 }
 
 .collapse :global(.ant-collapse-header) {
   font-family: var(--font-heading) !important;
-  font-size: var(--text-small) !important;
+  font-size: var(--fs-100) !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  color: var(--dark-primary) !important;
+  color: var(--color-text) !important;
   padding: 20px 0 !important;
 }
 
@@ -91,14 +92,14 @@
 }
 
 .collapse :global(.ant-collapse-expand-icon) {
-  color: var(--dark-primary) !important;
+  color: var(--color-text) !important;
 }
 
 .expandIcon {
-  font-size: var(--text-regular) !important;
+  font-size: var(--fs-200) !important;
   font-weight: 400;
   margin-right: 10px;
-  color: var(--dark-primary) !important;
+  color: var(--color-text) !important;
   transition: transform 0.3s ease;
   display: inline-block;
   transform: rotate(0deg);
@@ -106,7 +107,7 @@
 
 .expandIconActive {
   transform: rotate(90deg);
-  color: var(--dark-primary) !important;
+  color: var(--color-text) !important;
 }
 
 @media (max-width: 1400px) {

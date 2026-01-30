@@ -5,8 +5,8 @@ import styles from './styles.module.css';
 const BaseCard = ({
   image,
   imageNode,
-  width = 310,
-  height = 310,
+  width,
+  height,
   onImageClick,
   imageClassName,
   className,
@@ -14,9 +14,13 @@ const BaseCard = ({
 }: BaseCardProps) => (
   <Card
     className={`${styles.card} ${className ?? ''}`}
-    style={{ width }}
+    style={{ width: width ?? '100%' }}
     cover={
-      <div className={styles.imgWrapper} onClick={onImageClick} style={{ height }}>
+      <div
+        className={styles.imgWrapper}
+        onClick={onImageClick}
+        style={{ height: height ?? 'auto', aspectRatio: !height ? 'var(--card-aspect-ratio, 3 / 4)' : undefined }}
+      >
         {imageNode ?? (
           <img
             className={`${styles.image} ${imageClassName ?? ''}`}

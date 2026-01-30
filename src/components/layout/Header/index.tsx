@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useToggle } from '../../../hooks/useToggle';
 import { useLang } from '../../../hooks/useLang';
 import Logo from './Logo/index';
@@ -13,6 +13,10 @@ import MenuDrawer from './MenuDrawer';
 import styles from './styles.module.css';
 
 const Header = () => {
+  const { pathname } = useLocation();
+
+  const isDarkHeader = pathname === '/' || pathname.startsWith('/home');
+
   const { currentLang, changeLanguage } = useLang();
   const navigate = useNavigate();
 
@@ -20,14 +24,18 @@ const Header = () => {
   const cart = useToggle();
 
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${
+        isDarkHeader ? styles['headerDark'] : styles['headerLight']
+      }`}
+    >
       <div className="container">
         <div className={styles.headerContent}>
           <Hamburger onClick={menu.toggle} />
           <div className={styles.logoContainer}>
             <Logo />
           </div>
-          
+
           <div className={styles.menuDesktop}>
             <MainMenu />
           </div>

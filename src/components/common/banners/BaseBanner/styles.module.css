@@ -38,18 +38,6 @@
   bottom: 15%;
   z-index: 2;
   text-align: center;
-  animation: fadeUp 0.8s ease forwards;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .buttons {
@@ -57,37 +45,12 @@
   gap: 20px;
 }
 
-.buttonBook,
-.buttonShop {
-  color: var(--color-primary);
-  font-size: var(--text-regular);
-  font-weight: 500;
-  border-radius: 4px;
-  border: none;
-  text-decoration: none;
-  transition: all 0.25s ease !important;
-  box-shadow:
-    0 0 4px 0 #e7d1cf inset,
-    0 0 6px 4px #e7d1cf;
-  background-color: transparent;
-}
-
 .buttonBook {
-  padding: 10px 22px;
+  padding: 9px 22px;
 }
 
 .buttonShop {
-  padding: 10px 34px;
-}
-
-.buttonBook:hover,
-.buttonShop:hover {
-  border: none !important;
-  color: #fff !important;
-  transform: translateY(-2px);
-  box-shadow:
-    0 0 6px 0 #e7d1cf inset,
-    0 0 6px 4px #e7d1cf;
+  padding: 9px 34px;
 }
 
 @media (max-width: 768px) {
