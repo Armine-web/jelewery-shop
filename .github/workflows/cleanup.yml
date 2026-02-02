@@ -1,0 +1,22 @@
+name: Final Cleanup Try
+on: workflow_dispatch
+
+jobs:
+  cleanup_job:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Delete Empty Files
+        run: find . -type f -empty -not -path "./.git/*" -delete
+
+      - name: Sync Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -u
+          git commit -m "Cleanup empty files" || echo "Nothing to commit"
+          git push
