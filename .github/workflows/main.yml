@@ -1,0 +1,22 @@
+name: Delete Empty Files
+on:
+  workflow_dispatch: # This creates the "Manual Button"
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Delete all empty files
+        run: |
+          find . -type f -empty -not -path "./.git/*" -delete
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -u
+          git commit -m "Cleanup: remove empty files" || echo "No empty files found"
+          git push
