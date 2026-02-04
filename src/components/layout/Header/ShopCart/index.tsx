@@ -5,7 +5,7 @@ import type { ShopCartIconProps } from './types';
 
 const ShoppCart = ({ count, onClick }: ShopCartIconProps) => {
   return (
-    <Badge count={count} overflowCount={99} color="#850710">
+    <Badge count={count} overflowCount={99} className={styles.badge}>
       <ShoppingOutlined className={styles.cartIcon} onClick={onClick} />
     </Badge>
   );

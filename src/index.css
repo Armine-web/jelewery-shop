@@ -75,6 +75,10 @@ button {
   font-size: inherit;
 }
 
+.badge{
+  background-color: var(--color-secondary);
+}
+
 .underlineEffect {
   position: relative;
   display: inline-block;

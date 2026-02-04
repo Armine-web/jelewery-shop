@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 export const BookingCart = ({ count, onClick }: BookingCartIconProps) => {
   return (
-    <Badge count={count} overflowCount={99} style={{ backgroundColor: '#850710'}}>
+    <Badge count={count} overflowCount={99} className={styles.badge}>
       <ScheduleOutlined className={styles.bookingcarticon} onClick={onClick} />
     </Badge>
   );

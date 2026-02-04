@@ -10,6 +10,7 @@ import styles from './styles.module.css';
 const ContactForm = () => {
   const { t } = useTranslation();
   const [form] = Form.useForm<ContactRequest>();
+  const [preferredMethod, setPreferredMethod] = useState<'phone' | 'telegram' | 'email'>('phone');
 
   const onFinish = async (values: ContactRequest) => {
     try {
@@ -20,8 +21,6 @@ const ContactForm = () => {
       message.error(t('contact.formError'));
     }
   };
-
-  const [preferredMethod, setPreferredMethod] = useState<'phone' | 'telegram' | 'email'>('phone');
 
   return (
     <div className={styles.contactFormPage}>
@@ -77,7 +76,8 @@ const ContactForm = () => {
               </Form.Item>
 
               {preferredMethod === 'telegram' && (
-                <Form.Item className={styles.teleramWrapper}
+                <Form.Item
+                  className={styles.teleramWrapper}
                   label={t('contact.telegramUsername')}
                   name="telegram"
                   rules={[requiredRule(t('contact.required'))]}
