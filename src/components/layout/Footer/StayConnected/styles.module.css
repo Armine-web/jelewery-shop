@@ -87,7 +87,7 @@
 .facebookIcon {
   width: 24px;
   height: 24px;
-  background-color: var(--color-text);
+  background-color: var(--dark-primary);
   display: flex;
   align-items: center;
   justify-content: center;
