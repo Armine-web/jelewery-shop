@@ -44,7 +44,7 @@ const Header = () => {
               <User />
             </div>
             <BookingCart count={0} onClick={() => navigate('/booking')} />
-            <ShoppingCart count={1} onClick={cart.toggle} />
+            <ShoppingCart count={0} onClick={cart.toggle} />
             <ShoppingCartDrawer open={cart.isOpen} onClose={cart.close} />
             <MenuDrawer open={menu.isOpen} onClose={menu.close} />
             <LanguageSwitcher currentLang={currentLang} onChange={changeLanguage} />
